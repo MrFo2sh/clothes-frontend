@@ -1,0 +1,38 @@
+<!--
+  Generated template for the AddItemPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Add new Item</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="operation" >
+      <ion-item>
+          <ion-input type="text" placeholder="Name" required formControlName="name"></ion-input>    
+      </ion-item>
+    <ion-item>
+        <ion-input type="text" placeholder="Description" required formControlName="description"></ion-input>    
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" placeholder="Image Url" required formControlName="url"></ion-input>    
+    </ion-item>
+    <ion-item>
+        <ion-input type="number" placeholder="Amount in stock" required formControlName="amount"></ion-input>  
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" placeholder="Price" required formControlName="price"></ion-input>  
+    </ion-item>
+    <ion-item>
+        <ion-input type="text" placeholder="Category" required formControlName="category"></ion-input>  
+    </ion-item>
+    <button round block ion-button (click)="addItem()">Add Item</button>
+  </form>
+</ion-content>

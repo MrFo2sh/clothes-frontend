@@ -1,0 +1,24 @@
+page-detail {
+    ion-title{
+        text-align: center;
+    }
+    .itemDetailImg{
+        width: 100%;
+        border: 2px double grey;
+    }
+    h2{
+        font-weight: bold;
+        font-size: 30px !important;
+    }
+    p{
+        font-size: 26px !important;
+        overflow: hidden;
+        white-space: normal;
+    }
+    ion-range{
+        width: 93%
+    }
+    ion-badge{
+        margin-top: -6.5%;
+    }
+}

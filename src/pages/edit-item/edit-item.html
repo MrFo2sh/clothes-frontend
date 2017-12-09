@@ -1,0 +1,44 @@
+<!--
+  Generated template for the EditItemPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Edit Item</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="operation">
+      <ion-item>
+          <ion-label>Name:</ion-label>
+          <ion-input type="text" required [(ngModel)]='item.name' formControlName="name"></ion-input>    
+      </ion-item>
+    <ion-item>
+        <ion-label>Description:</ion-label>
+        <ion-input type="text" required [(ngModel)]='item.description' formControlName="description"></ion-input>    
+    </ion-item>
+    <ion-item>
+        <ion-label>Image Url:</ion-label>        
+        <ion-input type="text" required [(ngModel)]='item.url' formControlName="url"></ion-input>    
+    </ion-item>
+    <ion-item>
+        <ion-label>Amount in stock:</ion-label>                
+        <ion-input type="number" [(ngModel)]='item.amount' required formControlName="amount"></ion-input>  
+    </ion-item>
+    <ion-item>
+        <ion-label>Category:</ion-label> 
+        <ion-input type="text"required [(ngModel)]='item.category' formControlName="category"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>Do you want to delete:</ion-label> 
+        <ion-input type="text" required formControlName="delete"></ion-input>
+    </ion-item>
+    <button round block ion-button (click)="editItem()">Edit Item</button>
+  </form>
+</ion-content>
